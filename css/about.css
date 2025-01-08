@@ -1,0 +1,83 @@
+.about_section{
+    padding-top: 130px
+}
+
+.about_section__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.about_section__title {
+    font-size: 101px;
+    font-weight: 400;
+    line-height: 1;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.about_section__info {
+    max-width: 704px;
+
+}
+.info__title {
+    font-size: 32px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.info__text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #C7C7C7;
+    margin-bottom: 48px;
+}
+.about_section__social_media {
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+}
+
+.about_section__resume_link {
+    width: 244px;
+    height: 54px;
+    position: relative;
+    padding: 15px 15px 15px 30px;
+    text-decoration: none;
+    color: #000000; 
+    background-color: #D3E97A; 
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    margin-right: 16px;
+}
+
+.about_section__resume_link span {
+    position: relative;
+    z-index: 1;
+}
+
+.about_section__resume_link span::after {
+    content: '';
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px; /* Размер точки */
+    height: 12px;
+    background-color: #000000; /* Цвет точки */
+    border-radius: 50%;
+}
+
+.about_section__resume_link:hover {
+    background-color: #333333; /* Цвет фона при наведении */
+}
+
+.about_section__image {
+    max-width: 1224px;
+    max-height: 800px;
+    overflow: hidden;
+
+}
+
