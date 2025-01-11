@@ -130,6 +130,10 @@
         flex-direction: column;
     }
 
+    .home_section__title {
+        font-size: 78px;
+    }
+
     .home_section__image {
         max-width: 100%;
         height: auto;

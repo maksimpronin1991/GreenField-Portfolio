@@ -1,5 +1,5 @@
 .about_section{
-    padding-top: 100px
+    padding-top: 80px
 }
 
 .about_section__inner {
@@ -18,7 +18,7 @@
 }
 .about_section__info {
     max-width: 704px;
-
+    margin-bottom: 30px;
 }
 .info__title {
     font-size: 32px;
@@ -81,3 +81,14 @@
 
 }
 
+
+@media (max-width: 768px) {
+
+    .about_section__title {
+        font-size: 78px;
+    }
+    .info__title {
+        font-size: 26px;
+
+    }
+}

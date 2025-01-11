@@ -15,6 +15,7 @@
     line-height: 1;
     color: #FFFFFF;
     margin-bottom: 10px;  
+    white-space: nowrap;
 }
 
 .skills_section__info{
@@ -45,7 +46,7 @@
     padding: 20px 40px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 890px) {
     .skills_section__inner {
         flex-direction: column;
     }
