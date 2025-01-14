@@ -1,6 +1,11 @@
+.projects_section {
+    border-bottom:2px #484848 solid;
+}
+
 .projects_section__inner {
     padding: 80px 0;
 }
+
 .projects_section__title {
     width: 70%;
     max-width: 600px;
@@ -8,52 +13,84 @@
     font-weight: 400;
     line-height: 1;
     color: #FFFFFF;
-    margin-bottom: 10px; 
-    white-space: nowrap; 
+    margin-bottom: 10px;
+    white-space: nowrap;
 }
+
 .projects_section__text {
     font-size: 18px;
     line-height: 1.5;
     color: #C7C7C7;
-    margin:40px 0 50px 0;
+    margin: 40px 0 50px 0;
     text-align: center;
+}
+
+.project-card__info{
+    max-width: 50%;
+    display: flex;
+    gap: 40px;
+    align-items: start;
+    flex-direction: column;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .project-card__title {
     font-size: 32px;
     line-height: 1.5;
-    margin: 20px 0;
     color: #C7C7C7;
-    text-align: left;
-    padding-left: 40px;
+    margin-top: 20px;
 }
 
 .project-description {
     font-size: 18px;
     line-height: 1.5;
     color: #C7C7C7;
-    margin:20px 0;
     text-align: left;
-    padding-left: 40px;
+    margin-bottom: 60px;
 }
 
-.project-card__link{
-    width: 100%;
-    display: inline-block;
-    margin-top: 10px;
-    color: #C7C7C7;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    text-align: end;
-    padding-right: 40px;
+.project-card__link-container{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
 }
+
+.project-card__link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #D3E97A;
+    transition: all 0.3s ease;
+}
+
+.project-card__link-arrow {
+    width: 15px; 
+    height: 15px;
+    margin-left: 8px; 
+    transition: transform 0.2s ease;
+}
+
+.project-card__link-git{
+    width: 20px; 
+    height: 20px;
+    margin-left: 10px; 
+    transition: transform 0.2s ease;
+}
+
+
+.project-card__link:hover .project-card__link-arrow,
+.project-card__link:hover .project-card__link-git {
+    transform: translateX(5px);
+} 
 
 
 
 
 .projects-carousel {
     position: relative;
-    max-width: 800px;
+    max-width: 1300px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -69,14 +106,17 @@
 }
 
 .project-card {
+    display: flex;
     background-color: #1A1A1A;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
+    position: relative;
+    gap: 20px;
 }
 
 .project-card img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     border-radius: 4px;
 }
@@ -105,6 +145,7 @@
     .projects_section__title {
         font-size: 58px;
     }
+
     .project-card__title {
         font-size: 28px;
         line-height: 1.5;
@@ -118,8 +159,40 @@
         font-size: 16px;
         line-height: 1;
         color: #C7C7C7;
-        margin:10px 0;
+        margin: 10px 0;
         text-align: left;
+        padding-left: 20px;
+    }
+
+    .project-card {
+        flex-wrap: wrap;
+    }
+
+    .projects-carousel {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .project-card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+    }
+
+    .project-card__info{
+        max-width: 100%;
+        display: flex;
+        gap: 10px;
+        align-items: start;
+        flex-direction: column;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .project-card__link-container{
+        gap: 20px;
         padding-left: 20px;
     }
 }
