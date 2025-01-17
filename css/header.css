@@ -1,9 +1,19 @@
-
 .header {
     background-color: inherit;
     padding: 35px 60px;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+/* Add this new rule for when the header is sticky */
+.header.sticky {
+    background-color: rgba(51, 51, 51, 0.9); /* Adjust the color and opacity as needed */
+    padding: 20px 60px; /* Optionally reduce padding when sticky */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
 }
 
 .header__nav{
@@ -130,4 +140,6 @@
         transform: rotate(-45deg);
         bottom: 9px;
     }
+
+
 }
